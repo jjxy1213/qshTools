@@ -1,0 +1,46 @@
+@import "../../node_modules/weui/src/style/weui";
+@import "../iconfont/iconfont";
+@import "../footer/css/footer";
+@import "../newFooter/footer";
+@import "../spinner/spinner";
+@import "../header/css/head";
+@import "../header/css/pre";
+
+.weui_toast{
+  z-index: 100000001;
+}
+
+.qsh_icon_warn{
+  margin: 22px 0 0;
+  display: block;
+
+  &::before{
+    font-size: 55px;
+    color: #FFFFFF;
+    content: "!";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: inherit;
+    width: 1em;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    text-align: center;
+  }
+}
+
+.weui_dialog_confirm{
+  z-index: 100000000;
+  position: relative;
+}
+
+.qsh_module_error{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+}

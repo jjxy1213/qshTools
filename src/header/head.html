@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Expires" CONTENT="0">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <!-- qshHeader -->
+    <title>Page</title>
+</head>
+<body>
+<!--<div class="head">
+    <div class="head_left">
+        <span class="head_icon head_back"><i class="iconfont icon-fenxiang"></i></span>
+    </div>
+    <div class="head_title">商品管理</div>
+    <div class="head_right">
+        <span class="head_icon head_message">
+            <i class="iconfont icon-guanzhugengduocaozuo">
+                <div class="icon_active"></div>
+            </i>
+        </span>
+        <span class="head_icon">完成</span>
+    </div>
+
+    <ul class="head_menus">
+        <li class="head_menus_item">
+            <i class="iconfont icon-xiaoxi"></i>
+            <span>消息</span>
+        </li>
+        <li class="head_menus_item"><i class="iconfont icon-home"></i>主页</li>
+        <li class="head_menus_item">
+            <i class="iconfont icon-user"></i>我的企商
+            <div class="icon-active-wrapper">
+                <div class="icon_active"></div>
+            </div>
+        </li>
+    </ul>
+</div>-->
+<div id="head-wrapper"></div>
+<button id="append">在右侧右边新增一个按钮</button>
+<button id="prepend">在右侧坐边新增一个按钮</button>
+<button id="remove">删除最后加入的按钮</button>
+
+<div class="moremenu">
+    <span class="iconsj qsh-menu-arrow"></span>
+    <ul class="tkuang ">
+        <li class="qsh-head-menu-item"><i class="iconfont shi_18"></i>收货地址</li>
+        <li class="qsh-head-menu-item"><i class="iconfont shi_18"></i>帐户管理</li>
+    </ul>
+</div>
+<i class="iconfont shi_18"></i>
+<!-- qshFooter -->
+<script>
+    var options = {
+        mount: '#head-wrapper',
+        name: "商品管理",
+        leftItems: [
+            {
+                icon: 'left',
+                id: 'back',
+                handler: function(){
+                    return false;
+                }
+            }
+        ],
+        rightItems: [
+            {
+                icon: 'xiaoxi',
+                id:　'message',
+                handler: function(e){
+                    alert("消息");
+                }
+            },
+            {
+                icon: 'gengduodiandian',
+                hasActive: true,
+                items: [
+                    {
+                        name: '消息',
+                        icon: 'xiaoxi',
+                        hasActive: true,
+                        handler: function(){
+                            alert('消息')
+                        }
+                    },
+                    {
+                        name: '主页',
+                        icon: 'zhuye',
+                        handler: function(){
+                            alert('主页')
+                        }
+                    },
+                    {
+                        name: '我的企商',
+                        icon: 'huiyuan',
+                        handler: function(){
+                            alert('我的企商')
+                        }
+                    }
+                ]
+            }
+        ]
+    };
+    var headerObj = qshUtil.header(options);
+
+    var id = 1;
+    var ids = [];
+    $("#append").click(function(){
+        var cid = id;
+        headerObj.append({
+            text: '按钮'+cid,
+            id: cid,
+            handler: function(e){
+                alert("按钮"+cid);
+            }
+        })
+        ids.push(id);
+        id++;
+    })
+
+    $("#prepend").click(function(){
+        var cid = id;
+        headerObj.prepend({
+            text: '按钮'+cid,
+            id: cid,
+            handler: function(e){
+                alert("按钮"+cid);
+            }
+        })
+        ids.push(id);
+        id++;
+    })
+
+    $("#remove").click(function(){
+        var rid = ids.pop();
+        headerObj.remove(rid);
+    })
+</script>
+</body>
+</html>

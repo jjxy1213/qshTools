@@ -1,0 +1,49 @@
+@import "var";
+.head-search{
+  display: inline-block;
+  line-height: 1;
+  width: 100%;
+  padding: 0 15px;
+
+  .head-search-bottom{
+    height: 8px;
+    border: 1px solid #FFFFFF;
+    border-top: none;
+  }
+
+  .head-search-input-wrapper{
+    color: #FFFFFF;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  i{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: #FFFFFF;
+  }
+
+  input{
+    color: #FFFFFF;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    margin-left: 20px;
+    padding: 0 25px 0 5px;
+    background-color: @custom-background-color;
+  }
+
+  input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ddd;
+  }
+  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ddd;
+  }
+  input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ddd;
+  }
+  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ddd;
+  }
+}

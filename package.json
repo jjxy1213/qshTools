@@ -1,0 +1,45 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "```\r qshTools.js\r qshTools.css\r ```",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjxy1213/qshTools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjxy1213/qshTools/issues"
+  },
+  "homepage": "https://github.com/jjxy1213/qshTools#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "fastclick": "^1.0.6",
+    "jquery": "^2.2.0",
+    "jquery-lazyload": "^1.9.7",
+    "jquery.cookie": "^1.4.1",
+    "jsencrypt": "^2.1.0",
+    "weui": "^0.3.0"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-csso": "^1.0.1",
+    "gulp-less": "^3.0.5",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-next": "^1.0.4",
+    "gulp-rev": "^7.0.0",
+    "gulp-scp2": "^0.2.0",
+    "gulp-svn": "^1.0.6",
+    "gulp-uglify": "^1.5.2",
+    "mkdirp": "^0.5.1",
+    "run-sequence": "^1.1.5"
+  }
+}
