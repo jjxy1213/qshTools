@@ -1,5 +1,23 @@
 #常用方法
 
+////2016-11-02新增
+##resizeImgWidth
+调用示例
+```js
+//根据当前设备的屏占比返回合适宽度的图片，高度自由缩放
+qshObject.resizeImgWidth(100,imgUrl)
+```
+
+
+##resizeImgHeight
+调用示例
+```js
+//返回合适高度的图片，宽度自由缩放
+qshObject.resizeImgHeight(100,imgUrl)
+```
+
+//////////
+
 ##absoluteImg
 
 调用示例
