@@ -6,6 +6,7 @@
 ```js
 //根据当前设备的屏占比返回合适宽度的图片，高度自由缩放,size为图片rem为单位宽度。
 qshObject.resizeImgWidth(size,imgUrl)
+qshObject.resizeImgWidth(5.77777778,'group2/M00/03/C2/a.jpg');//返回"http://img.8673h.com//images/pro_pic_150x.png"
 ```
 
 
