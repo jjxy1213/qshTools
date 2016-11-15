@@ -1,6 +1,7 @@
 #弹出提示对话框
 
 2016-4-23新增
+
 type:tip 自定义左右按钮名称
 ```js
 qshObject.alert({
