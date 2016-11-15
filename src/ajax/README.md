@@ -3,6 +3,12 @@
 调用示例
 ```js
 qshObject.ajax(url, data);
+qshObject.ajax(url, data).then(function(data){
+  成功的回调
+},function(err){
+   失败的回调
+
+});
 ```
 返回一个jQuery Deferred对象
 
