@@ -103,8 +103,8 @@ qshObject.queryString('name')
 ##resizeImg
 调用示例
 ```js
-//根据当前设备的屏占比返回合适的图片
-qshObject.resizeImg(imgUrl, 100)
+//根据当前设备的屏占比返回合适的1:1图片
+qshObject.resizeImg(100,imgUrl)
 ```
 
 ##sessionStorage
