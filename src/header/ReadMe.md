@@ -4,10 +4,8 @@ qshHeader 依赖 JQuery， iconfont
 
 ##使用示例
 
-直接调用
-
-```js
 目前常用写法2016-11-15
+```js
 qshObject.header({
                 mount:'body',
                 name:'商品管理',
@@ -51,9 +49,10 @@ qshObject.header({
                     }
                 ],
             });
-**********************
+```
+直接调用
 
-
+```js
 var options = {
         mount: 'body',
         name: "商品管理",
