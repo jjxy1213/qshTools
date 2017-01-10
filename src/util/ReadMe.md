@@ -1,6 +1,7 @@
 #常用方法
 ###2017-01-10 图片方法优化
-```resizeImgWidth，resizeImgHeight,absoluteImg
+```js
+//resizeImgWidth，resizeImgHeight,absoluteImg
 三种图片方法的优化，对测试环境的图片显示进行了优化，在测试环境上传的图片也能显示了！
 ```
 
