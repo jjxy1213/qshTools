@@ -23,7 +23,8 @@ qshObject.resizeImgWidth(5.77777778,'group2/M00/03/C2/a.jpg');//返回"http://im
 qshObject.resizeImgHeight(size,imgUrl)
 ```
 
-###—————————————————————更新分割线—————————————————————
+###———————————————更新分割线——————————————
+
 ##absoluteImg
 
 调用示例
