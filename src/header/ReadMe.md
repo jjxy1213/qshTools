@@ -10,44 +10,13 @@ qshObject.header({
                 mount:'body',
                 name:'商品管理',
                 fixed:false,//建议该参数为false,为true情况IOS会出现样式混乱
-                leftItems: [
-                    {
-                        icon: 'back',
-                        handler: function(){
-                            return false;
-                        }
-                    }
-                ],
                 rightItems: [
-                    {
-                        icon: 'guanzhugengduocaozuo',
-                        hasActive: true,
-                        items: [
-                            {
-                                name: '消息',
-                                icon: 'xiaoxi',
-                                hasActive: true,
-                                handler: function(){
-                                    alert('消息')
-                                }
-                            },
-                            {
-                                name: '主页',
-                                icon: 'home',
-                                handler: function(){
-                                    alert('主页')
-                                }
-                            },
-                            {
-                                name: '我的企商',
-                                icon: 'user',
-                                handler: function(){
-                                    alert('我的企商')
-                                }
-                            }
-                        ]
+                  {
+                    icon: 'gengduodiandian',
+                    hasActive: true,
+                    items: ["zhuye", "huiyuan"]
                     }
-                ],
+                 ]
             });
 ```
 直接调用
