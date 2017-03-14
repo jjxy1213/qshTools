@@ -94,7 +94,7 @@ qshObject.localStorage('a')     //获取 返回123
 调用示例
 ```js
 //检测登陆状态
-qshObject.loginStatus(function(status){
+qshObject.loadingCheckStatu(function(status){
     //status true为已登录，false未登陆
 })
 ```
