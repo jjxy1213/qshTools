@@ -3,7 +3,7 @@
 qshHeader 依赖 JQuery， iconfont
 
 ##使用示例
-新增版头部调用2017-05-27
+新增新版白色背景头部带图文安钮调用2017-05-27
 默认带返回和图标
 ```js
 qshObject.newheader({
