@@ -3,6 +3,33 @@
 qshHeader 依赖 JQuery， iconfont
 
 ##使用示例
+新增版头部调用2017-05-27
+默认带返回和图标
+```js
+qshObject.newheader({
+                mount:'body',
+                name:'商品管理',
+                fixed:false,//建议该参数为false,为true情况IOS会出现样式混乱
+            });
+```
+新增图标加文字形式头部按钮方法，其它单图标和单文字按钮和老的一样
+
+```js
+qshObject.newheader({
+                mount:'body',
+                name:'商品管理',
+                fixed:false,//建议该参数为false,为true情况IOS会出现样式混乱
+                rightItems: [
+                  {
+                    iconText: 'baojifuben2',//新增图标加文字形式头部按钮。
+                    text_content:'主页',
+                    handler: function(){
+                      location.href = qsh_page_urls.home;//点回退按钮要进行的操作放这里。
+                      }
+                    }
+                 ]
+            });
+```
 
 目前常用写法2016-11-15
 ```js
