@@ -23,7 +23,7 @@ qshObject.newheader({
                 fixed:false,//建议该参数为false,为true情况IOS会出现样式混乱
                 rightItems: [
                   {
-                    iconText: 'icon-qsh2_0_back',//返回按钮重新设置。
+                    iconText: 'xiuchezai2-back',//返回按钮重新设置。
                     text_content:'回退',
                     handler: function(){
                       location.href = qsh_page_urls.home;//点回退按钮要进行的操作放这里。
